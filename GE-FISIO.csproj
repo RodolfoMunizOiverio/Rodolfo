@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DEB15ED-C13C-4555-BA5B-5E19FEDC1C31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GE_FISIO</RootNamespace>
+    <AssemblyName>GE-FISIO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FISIODataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FISIODataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\AAnamnese.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VIEW\AAnamnese.Designer.cs">
+      <DependentUpon>AAnamnese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\agendamento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VIEW\agendamento.Designer.cs">
+      <DependentUpon>agendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\financas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\financas.Designer.cs">
+      <DependentUpon>financas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VIEW\Menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Menu1.Designer.cs">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\novaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\novaDespesa.Designer.cs">
+      <DependentUpon>novaDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\novaempresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\novaempresa.Designer.cs">
+      <DependentUpon>novaempresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\novaEvolucao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\novaEvolucao.Designer.cs">
+      <DependentUpon>novaEvolucao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\novaReceita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\novaReceita.Designer.cs">
+      <DependentUpon>novaReceita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\novoPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\novoPaciente.Designer.cs">
+      <DependentUpon>novoPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\pacientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VIEW\pacientes.Designer.cs">
+      <DependentUpon>pacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\teste.Designer.cs">
+      <DependentUpon>teste.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VIEW\AAnamnese.resx">
+      <DependentUpon>AAnamnese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\agendamento.resx">
+      <DependentUpon>agendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\financas.resx">
+      <DependentUpon>financas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Menu1.resx">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\novaDespesa.resx">
+      <DependentUpon>novaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\novaempresa.resx">
+      <DependentUpon>novaempresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\novaEvolucao.resx">
+      <DependentUpon>novaEvolucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\novaReceita.resx">
+      <DependentUpon>novaReceita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\novoPaciente.resx">
+      <DependentUpon>novoPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\pacientes.resx">
+      <DependentUpon>pacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\teste.resx">
+      <DependentUpon>teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FISIODataSet1.xsc">
+      <DependentUpon>FISIODataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FISIODataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FISIODataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FISIODataSet1.xss">
+      <DependentUpon>FISIODataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fisioterapia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_77917.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelchairaccess_86237.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelchairaccess_862371.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_paciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelchairaccess_862372.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo_login1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_dinheiro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_grafico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_dinheiro1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_fisioterapeuta.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_empresa.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_configurações.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_loggof.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_logof.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="COMANDOS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olho_fechado.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olho_aberto.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone_mais.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proximo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelchairaccess_862373.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta_cima.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta_baixo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta_baixo1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
